@@ -16,7 +16,6 @@ $users = readCSV(__DIR__ . '/../php/data/users.csv');
 
 if (!empty($search)) {
 
-
     $users = array_filter($users, function($user) use ($search) {
    return stripos($user['login'], $search) !== false ||
         stripos($user['nom'], $search) !== false ||
@@ -113,8 +112,6 @@ $users_slice = array_slice($users, $start, $users_per_page);
                                 </span>
                                 </div>
                             </div>
-
-
 
 
 
